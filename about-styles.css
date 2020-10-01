@@ -98,6 +98,15 @@ h1 {
     border-width: thick;
 }
 
+.contact_item {
+  text-align: center;
+}
+
+img{
+  margin-top: 10px;
+  max-width: 10%;
+  max-height: 50%;
+}
 body {
   background: #0f2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
