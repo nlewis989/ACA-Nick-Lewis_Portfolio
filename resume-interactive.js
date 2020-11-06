@@ -1,11 +1,19 @@
+
 function fadenamein() {
-    const element = document.getElementById("name");
-    element.classList.add("animate__animated", ".animate__fadeInDown");
+    document.getElementById('obi').classList.add("animate__animated", ".animate__fadeIn") 
+
 }
 
-if (window.function_name) {
-    // script loaded
-} else {
-    // script not loaded
+function hide() {
+    document.getElementById('hide').classList.add("animate__animated", "animate__fadeInUp")
+
 }
 
+function gone() {
+    document.getElementById('picture').classList.add("animate__animated", "animate__fadeOut")
+}
+
+function mouseout() {
+    document.getElementById('picture').classList.remove("animate__fadeOut")
+    document.getElementById('picture').classList.add("animate__animated", "animate__fadeIn")
+}

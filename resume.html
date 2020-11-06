@@ -5,7 +5,7 @@
         <title>resume-style</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./resume-style.css">
-        <link script="./resume-interactive.js">
+        <script src="resume-interactive.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous">
 
@@ -23,14 +23,14 @@
     </header>
         <main class="box">
             <section class="grid_container">
-                <section class="name" id="name" onclick="fadenamein()">
-                    </h1>Obi<br>Wan<br>Kenobi</h1>
+                <section class="name" id="name">
+                    <h1 id="obi" onclick="fadenamein()">Obi<br>Wan<br>Kenobi</h1>
                 </section>
                 <section class="ittle">
                     <h2>Jedi<br>Master</h2>
                 </section>
                 <section class="pic">
-                    <img src="./obi.jpg" lt= "Obi Won Kenobi">
+                    <img id="picture" onmouseout="mouseout()" onmouseover="gone()" src="./obi.jpg" lt= "Obi Won Kenobi">
                 </section>
                 <section class="skills">
                     <h3>Skills</h3>
@@ -49,8 +49,8 @@
                 <div class="contact_column">
                     <h4>Contact<br>Info</h4>  
                     <div class="contact_item">
-                        <img src="./call.png" alt="phone"><br>
-                        <span>123-456-7890</span>
+                        <img onclick="hide()" src="./call.png" alt="phone"><br>
+                        <span id="hide">123-456-7890</span>
                     </div>
                     <div class="contact_item">
                         <a href="mailto:ObiDaJediMaster@Jedicounsel.org" class="email_link">
