@@ -1,278 +1,168 @@
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
 
-header {
+header ul {
+    list-style: none;
+    /*text-align: center*/
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+header ul li a, header ul li a:after, header ul li a:before {
+    transition: all .5s;
+}
+
+header ul li a:hover {
+    color: #555;
+}
+
+button:active {
+    box-shadow: 0 2px 0 #006599;
+    transform: translateY(3px);
+}
+
+.main-container {
+    margin: 0;
+    width: 500pt;
+    height: 720pt;
     display: grid;
     grid-template-columns: 30% 70%;
-    width: 100%;
+    grid-template-rows: 30% 70%;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-right: 20px;
-    grid-column: 2/3;
-}
-
-body {
-    background-image: url(/1233893-free-star-wars-1080p-hd-wallpaper-1920x1080.jpg);
-}
-
-nav > a {
-    margin: 1% 1% 3%;
-    height: 20px;
-    width: 120px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 25px;
-    background: dimgray;
-    padding: 15px;
-    text-align: center;
-    border: 2px solid silver;
-    text-decoration: none;
-}
-
-.has-border {
-    border-radius: 50px;
-    border: 5px solid #0795C3;
-    background: none;
-    padding: 5px;
-}
-
-.box {
-    display: flex;
-    width: 900px;
-    height: 2500px;
-    background-color: #cdf2ff72;
-    margin: 20px auto;
-    border: solid #1eff00;
-    border-radius: 100px;
-}
-
-
-.grid_container {
+header {
+    grid-column: 1/3;
+    grid-row: 1/2;
     display: grid;
-    grid-template-columns: 900px;
-    grid-row: 900px;
-    grid-row-gap: 10px;
-    height: 2000px;
-    width: 900px;
+    width: 100%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 60% 40%;
+    align-items: center;
+    justify-items: center;
+    align-content: space-between;
 }
 
-.name {
-    grid-row: 2 / 1;
-    grid-column: 1 / 2;
-    width: 300px;
-    height: 300px;
-    margin-top: 10%;
-    margin-left: 50%;
-    margin-right: 10%; 
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    color: #00FF00;
-    letter-spacing: 5px;
-    text-shadow: 10px 10px 25px rgb(81,67,21),
-    -10px 10px 25px rgb(81,67,21),
-    -10px -10px 25px rgb(81,67,21),
-    10px -10px 25px rgb(81,67,21);    
-    
-}
-
-.ittle {
-    
-    font-size: 24px;
-    margin-top: 250px;
-    font-family: 'Nunito Sans', sans-serif;
+header.has-border {
+    width: 80%;
+    margin: 5% auto;
+    background: #022230;
+    padding: 5px 0;
+    box-shadow: 0px 5px 0px #000000;
     border-radius: 50px;
-    margin-top: 10px;
-    margin-left: 90px;
-    margin-bottom: 20px;
-    margin-right: 90px;
-    border-style: double;
-    text-align: center;
-    -ms-flex-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    color: #00FF00;
-    letter-spacing: 5px;
-    text-shadow: 10px 10px 25px rgb(81,67,21),
-    -10px 10px 25px rgb(81,67,21),
-    -10px -10px 25px rgb(81,67,21),
-    10px -10px 25px rgb(81,67,21);  
-
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-transform: uppercase;
 }
 
-.skills{
-    text-align: center;
-    font-size: 30px;
-    border-bottom-style: solid;
-    border-radius: 50px;
-    font-family: 'Nunito Sans', sans-serif;
-        font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    color: #00FF00;
-    letter-spacing: 5px;
-    text-shadow: 10px 10px 25px rgb(81,67,21),
-    -10px 10px 25px rgb(81,67,21),
-    -10px -10px 25px rgb(81,67,21),
-    10px -10px 25px rgb(81,67,21);  
-    
-
+#mainP {
+    font-size: 15pt;
 }
 
-.Experience {
-    margin-top: 30px;
-    margin-bottom: 300px;
-    font-size: 30px;
-    font-family: 'Nunito Sans', sans-serif;
-    margin-left: 480px;
-    font-family: 'Ubuntu', sans-serif;
-    color: #00FF00;
-    letter-spacing: 5px;
-    text-shadow: 10px 10px 25px rgb(81,67,21),
-    -10px 10px 25px rgb(81,67,21),
-    -10px -10px 25px rgb(81,67,21),
-    10px -10px 25px rgb(81,67,21); 
-    border-style: double; 
-    border-radius: 10px;
+img {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    height: 100%;
+    box-shadow: 1pt 1pt 8px 11px rgb(63 63 63);
 }
 
-.Accolades{
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 80px;
-    margin-left: 50%;
-    font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-    color: #00FF00;
-    letter-spacing: 5px;
-    text-shadow: 10px 10px 25px rgb(81,67,21),
-    -10px 10px 25px rgb(81,67,21),
-    -10px -10px 25px rgb(81,67,21),
-    10px -10px 25px rgb(81,67,21); 
-    border-style: double;
-    border-radius: 10px;
+h1 {
+    margin: 35pt 20pt 10pt;
+    font-size: 50pt;
+    padding-bottom: 10pt;
+    border-bottom: 2pt solid blue;
+    border-width: 70%;
 }
 
-.logo {
-    width: auto;
-    height: 200px;
-    margin: 3% 10%;
-  }
-
-nav >:hover {
-    color: green;
-    opacity: .7;
-    cursor: pointer;
+h2 {
+    font-size: 16pt;
 }
 
-.contact_column > h4 {
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    position:relative; top:-900px;
-    margin-left: 100px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 70px;
-    font-weight: bold;
-    color: #32CD32;
-    letter-spacing: 5px;
-    text-shadow: 10px 10px 25px rgb(81,67,21),
-      -10px 10px 25px rgb(81,67,21),
-      -10px -10px 25px rgb(81,67,21),
-      10px -10px 25px rgb(81,67,21);
-    
-} 
-
-.contact_item {
-    padding: 70px;
-    font-size: 20px;
-    margin-left: 7%;
-    position:relative; top:-900px;
-    border-left-style: groove;
-    border-color: lawngreen;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    color: #00FF00;
-    letter-spacing: 5px;
-    text-shadow: 10px 10px 25px rgb(81,67,21),
-    -10px 10px 25px rgb(81,67,21),
-    -10px -10px 25px rgb(81,67,21),
-    10px -10px 25px rgb(81,67,21);
-    
-
-}   
-
-.contact_item span {
-    font-size: 20px;
-
+h3 {
+    letter-spacing: 3pt;
 }
 
-.contact_column img {
-    color: rgb(23, 252, 23);
-    width: 150px;
-}   
-  
-.pic {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-left: 4%;
-    margin-top: 3%;
-    border-radius: 50px;
-    background: #222;	
-	background: linear-gradient(rgb(34, 60, 31), rgb(20, 167, 20));	
-	border-radius: 5px 0 0 5px;
-    box-shadow: 0 2px 0 rgb(30, 255, 0);
-    border-style: double;
-    
-    
+p, li {
+    font-size: 9pt;
 }
 
-.grid:after {
-    content: "";
-    display: table;
-    clear: both;
- }
+ul {
+    padding-left: 0pt;
+    margin-left: 20pt;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+aside {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    background: rgb(99, 72, 228);
+    background: linear-gradient( 180deg, rgba(99, 72, 228, 1) 0%, rgba(70, 111, 223, 1) 32%, rgba(73, 153, 215, 1) 100%);
+    padding-top: 25pt;
+    padding-bottom: 75pt;
+}
+
+#Contact {
+    border-bottom: 1pt solid white;
+    padding-bottom: 15pt;
+}
+
+.sidebar {
+    margin: 40pt;
+}
+
+aside section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0 10pt 0 20pt;
+}
+
+.things {
+    padding-bottom: 10pt;
+    border-bottom: 1pt solid blue;
+    margin-right: 80pt;
+}
+
+h4 {
+    margin-bottom: 0pt;
+}
 
 body {
-    background-color: #121212;
-}
-  
-p {
-    margin: 40px auto;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 70px;
-    font-weight: bold;
-    color: #CFC547;
-    text-align: center;
-    letter-spacing: 5px;
-    text-shadow: 10px 10px 25px rgb(81,67,21),
-      -10px 10px 25px rgb(81,67,21),
-      -10px -10px 25px rgb(81,67,21),
-      10px -10px 25px rgb(81,67,21);
+    font-size: 16px;
 }
 
-
-.animate__animated {
-    animation: fadeIn;
-    animation-duration: 5s;
+@media (min-width: 700px) {
+    body {
+        font-size: 18px;
+    }
 }
 
-.animate__fadeIn {
-    animation: fadeIn;
-    animation-duration: 5s;
-}
-
-.animate__fadeInUp {
-    animation: fadeInUp;
-}
-
-
-#hide {
-    opacity: 0;
+@media (min-width: 1000px) {
+    body {
+        font-size: 20px;
+    }
 }

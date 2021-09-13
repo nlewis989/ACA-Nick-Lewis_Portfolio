@@ -1,25 +1,42 @@
-<!-- Don't include this <body> tag, it's for reference only -->
-<!-- <body>  -->
-    <header>
-        <link rel="stylesheet" href="./style.css">
-        <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
-        <nav>
-         <a href="contact_me.html" class="has-border">Contact Me</a> 
-         <a href="resume.html" class="has-border">Resume</a> 
-         <a href="about_me.html" class="has-border">About me</a> 
-         <a href="my_blog.html" class="has-border">My Blog</a>
-         <a href="index.html" class="has-border">Home</a>
-         <a href="aboutPage.html" class="has-border">About</a>
-        </nav>
-     </header>
+<body>
+        <header class="has-border">
+         <link rel="stylesheet" href="./style.css">
+         <link rel="stylesheet" href="./reset.css">
+           <ul>
+              <li><a href="contact_me.html" class="has-border">Contact Me</a></li>
+              <li><a href="resume.html" class="has-border">Resume</a></li>
+              <li><a href="aboutPage.html" class="has-border">About me</a></li>
+              <li><a href="index.html" class="has-border">Home</a></li>
+           </ul>
+        </header>
      <main>
         <img src="./myProfilePic.jpg" id="profile-pic" alt="Head shot of Me">
-  
-        <!-- REPLACE THIS LINE WITH THE PORTFOLIO BUTTON, STEP 9  -->
-        
+              <section class="contact-me">
+              </section>
+              <section id="contact-me" style="grid-column: 2/3;">
+                 <form action="results.html" method="get" target="_blank">
+                    <div>
+                       <label for="name">Name:</label><br>
+                       <input type="text" id="name" name="inputname" placeholder="">
+                    </div>
+                    <div>
+                       <br><label for="email">E-Mail:</label><br>
+                       <input type="email" id="email" placeholder="">
+                    </div>
+                    <div class="radio">
+                       <p>Would you like to be contacted back?</p>
+                       <input type="radio" id="yes" name="choice1" value="yes">
+                       <label for="yes">Yes</label><br>
+                       <input type="radio" id="no" name="choice2" value="no">
+                       <label for="no">No</label>
+                    </div>
+                    <div>
+                       <br><label for="questionsOrComments">Questions or Comments?</label><br>
+                       <textarea id="questionsOrComments" name="questionsOrComments"
+                          minlength="20" maxlength="500" rows="4" cols="50"></textarea>
+                    </div>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+
      </main>
-     <footer>
-        <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
-     </footer>
-  <!-- </body> -->
-  <!-- Don't include this </body> tag, it's for reference only -->
+</body>
