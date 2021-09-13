@@ -1,69 +1,93 @@
 <!DOCTYPE html>
-<head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>resume-style</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./resume-style.css">
-        <script src="resume-interactive.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous">
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href=".style.css">
+    <link rel="stylesheet" href="../resume-style.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-            <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
-            <nav> 
-               <a href="contact_me.html" class="has-border">Contact Me</a> 
-                <a href="resume.html" class="has-border">Resume</a> 
-                <a href="about_me.html" class="has-border">About me</a> 
-                <a href="my_blog.html" class="has-border">My Blog</a>
-                <a href="index.html" class="has-border">Home</a>
-            </nav> 
+    <header class="has-border">
+
+        <ul>
+            <li><a href="contact_me.html" class="has-border">Contact Me</a></li>
+            <li><a href="resume.html" class="has-border">Resume</a></li>
+            <li><a href="aboutPage.html" class="has-border">About me</a></li>
+            <li><a href="index.html" class="has-border">Home</a></li>
+        </ul>
     </header>
-        <main class="box">
-            <section class="grid_container">
-                <section class="name" id="name">
-                    <h1 id="obi" onclick="fadenamein()">Obi<br>Wan<br>Kenobi</h1>
-                </section>
-                <section class="ittle">
-                    <h2>Jedi<br>Master</h2>
-                </section>
-                <section class="pic">
-                    <img id="picture" onmouseout="mouseout()" onmouseover="gone()" src="./obi.jpg" lt= "Obi Won Kenobi">
-                </section>
-                <section class="skills">
-                    <h3>Skills</h3>
-                    <article>Force: Mind Control,Telekenesis</article>
-                    <article>Lightsaber: Master of Jedi combat</article>
-                </section>
-                <section class="Experience">
-                    <h4>Experience</h4>
-                    <article>Cuts off almost all of anakins limbs</article>
-                    <article>Taught luke to learn about the force from a green baby</article> 
-                </section>
-                <section class="Accolades">
-                    <h5>Accolades</h5>
-                    <article>Known for most cut off human limbs and doing cool backflips</article>
-                </section>
-                <div class="contact_column">
-                    <h4>Contact<br>Info</h4>  
-                    <div class="contact_item">
-                        <img onclick="hide()" src="./call.png" alt="phone"><br>
-                        <span id="hide">123-456-7890</span>
-                    </div>
-                    <div class="contact_item">
-                        <a href="mailto:ObiDaJediMaster@Jedicounsel.org" class="email_link">
-                        <img src="./mail-512.jpg" alt="email"><br>ObiDaJediMaster@Jedicounsel.org
-                        </a>
-                    </div>
-                    <div class="contact_item">
-                        <a href="http://obi-wan-kenobi.com/" class="site_link" taret="_blank"><img src="./linkd.png" alt="linkedin website"><br>
-                        LinkedIn: @ObiWonKenobi</a>
-                    </div>
-                </div>
+    <div class="main-container" style="width: 1920px;height: 1080px;">
+        <header>
+            <img src="../piccyofme.png" alt="me" class="pic" id="me"
+                onmouseover="hide()"></img>
+            <h1 class="head" id="nick">Nick Lewis</h1>
+            <h2 class="head">Full Stack Developer</h2>
+            <p class="head" id="mainP">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Esse consequuntur sunt recusandae, unde iste exercitationem assumenda, beatae minima dolor omnis, amet
+                quas odio veniam officia ex ullam voluptates rerum aperiam?
+            </p>
+
+        </header>
+        <aside>
+            <h3 id="Contact">Contact Info</h3>
+            <section>
+                <p>408-963-9658</p>
+            </section>
+            <section>
+                <p class="sidebar">Austin, Texas</p>
+            </section>
+            <section>
+                <p class="sidebar">longestyard43@gmail.com</p>
+            </section>
+            <section>
+                <p>@nlewis97</p>
             </section>
 
-        </main>   
+        </aside>
+        <main>
+            <section>
+            </section>
+            <section>
+                <h3 class="things">Areas of Expertise</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eius atque
+                    odio deleniti numquam commodi facilis temporibus culpa, quo, aperiam quae libero labore accusamus
+                    similique aut autem laboriosam ullam id!</p>
+            </section>
+            <section>
+                <h3 class="things">Professional History</h3>
+                </ul>
+                <h4>Pruneyard Cinemas and bar Manager</h4>
+                <p class="title-d"> Duration: 2018-2019</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Odio magni nostrum nemo ullam non accusantium
+                        odit consequuntur cum consequatur saepe,</li>
+                    <li>provident, laboriosam atque nisi porro numquam corporis dolores iusto cumque!</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="things">Educational History</h3>
+                <h4>Austin Coding Academy</h4>
+                <p class="title-d">Full Stack Course | 2021-present</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Odio magni nostrum nemo ullam non accusantium
+                        odit consequuntur cum consequatur saepe,</li>
+                    <li>provident, laboriosam atque nisi porro numquam corporis dolores iusto cumque!</li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+    <link rel="resume-interactive.js">
 </body>
+
 </html>

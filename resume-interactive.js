@@ -1,6 +1,6 @@
 
 function fadenamein() {
-    document.getElementById('obi').classList.add("animate__animated", ".animate__fadeIn") 
+    document.getElementById('obi').classList.add("animate__animated", ".animate__fadeIn")
 
 }
 
